@@ -1,8 +1,3 @@
-Berikut adalah contoh `README.md` untuk GitHub proyek sistem login dan registrasi menggunakan PHP Native:
-
----
-
-```markdown
 # Sistem Login dan Registrasi PHP Native
 
 Proyek ini merupakan implementasi sederhana dari sistem login dan registrasi menggunakan **PHP Native** dan **MySQL**, tanpa menggunakan framework seperti Laravel. Proyek ini cocok untuk pemula yang ingin memahami dasar autentikasi di web menggunakan PHP.
@@ -16,16 +11,12 @@ Proyek ini merupakan implementasi sederhana dari sistem login dan registrasi men
 
 ## 📁 Struktur Folder
 
-```
-
 sistem-login/
-├── db.php             # Koneksi database
-├── register.php       # Halaman registrasi
-├── login.php          # Halaman login
-├── welcome.php        # Halaman setelah login (protected)
-└── logout.php         # Logout pengguna
-
-````
+├── db.php # Koneksi database
+├── register.php # Halaman registrasi
+├── login.php # Halaman login
+├── welcome.php # Halaman setelah login (protected)
+└── logout.php # Logout pengguna
 
 ## 🛠️ Cara Menjalankan Proyek (Mac & Windows)
 
@@ -49,30 +40,24 @@ CREATE TABLE users (
   username VARCHAR(50) NOT NULL UNIQUE,
   password VARCHAR(255) NOT NULL
 );
-````
 
-### 4. Jalankan proyek
-
+4. Jalankan proyek
 Buka browser dan akses:
-👉 `http://localhost/sistem-login/login.php`
+👉 http://localhost/sistem-login/login.php
 
-## 🔒 Catatan Keamanan
+🔒 Catatan Keamanan
+Password sudah dienkripsi dengan password_hash()
 
-* Password sudah dienkripsi dengan `password_hash()`
-* Jangan gunakan proyek ini untuk aplikasi produksi tanpa validasi dan sanitasi tambahan
+Jangan gunakan proyek ini untuk aplikasi produksi tanpa validasi dan sanitasi tambahan
 
-## 📌 Teknologi yang Digunakan
+📌 Teknologi yang Digunakan
+PHP Native
 
-* PHP Native
-* MySQL
-* HTML & CSS dasar
+MySQL
 
-## 📃 Lisensi
+HTML & CSS dasar
 
+📃 Lisensi
 Proyek ini bebas digunakan untuk belajar.
 
----
-
 Semoga bermanfaat! 🚀
-
-```
